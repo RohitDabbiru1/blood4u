@@ -1,0 +1,710 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    min-height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    overflow-x: hidden;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    display: inline-block;
+    background: linear-gradient(to bottom, #f09191, #ffb1b1);
+    border-radius: 30px;
+    border: none;
+    color:#fffefe;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+  }
+
+.btnd{
+  display: inline-block;
+    background: linear-gradient(to bottom, #f09191, #ffb1b1);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+
+
+
+}
+  .pos
+  {
+    position:relative;
+    top:260px;
+    color:#0000
+  }
+  .btn1 {
+    display: inline-block;
+    background: none;
+    border-radius: 30px;
+    
+    border-color:red;
+    color:red;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    height:50px;
+    width:100px;
+    
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+  }
+
+  .btn1:hover{
+    color:green;
+    border-color: green;
+    font-weight: bold;
+  }
+  
+.slidetext1{
+
+color:black;
+}
+.slidetext2{
+  color:black;
+  
+}
+  header .banner {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: #f38484;
+    padding: 10px;
+  }
+
+  header .banner button {
+    background: linear-gradient(to bottom, #f09191, #ffb1b1);
+    border-radius: 30px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    border-radius: 30px;
+  }
+  
+
+  header .banner .left {
+    display: flex;
+    gap: 10px;
+  }
+  
+  header .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    gap: 200px;
+    padding: 15px;
+    width: 100%;
+  }
+
+  header .main .navigation {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  header .main .navigation > a {
+    padding: 29px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #535353;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+    
+  
+  header .main .app {
+    background: black;
+    min-width: 100%;
+    height: 100%;
+    min-height: 10000px;
+  }
+
+  .slider-img {
+    width: 100%;
+    max-height: 500px;
+  }
+
+
+.slider-img {
+width: 100%;
+max-height: 500px;
+} 
+
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+max-width: 1000px;
+position: relative;
+margin: auto;
+}
+
+
+
+/* Next & previous buttons */
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 16px;
+margin-top: -22px;
+color: rgb(0, 0, 0);
+font-weight: bold;
+font-size: 18px;
+transition: 5.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+
+color:linear-gradient(to bottom, #ffffff, #f40a0a);
+font-size: 30px;
+-webkit-text-stroke: #ffffff;
+padding: 8px 12px;
+font-weight: bolder;
+border-radius: 0cm;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+-ms-touch-action: manipulation;
+touch-action: manipulation;
+cursor: pointer;
+}
+
+/* Number text (1/4 etc) */
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #000000;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 5.6s ease;
+}
+
+.active, .dot:hover {
+background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4} 
+to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next,.text {font-size: 11px}
+}
+
+.irs-counter-field{
+display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background:linear-gradient(#ea5e5e,#c17373);
+    padding: 10px;
+
+}
+
+
+.start-count{
+color: #f2f2f2;
+font-size: 20px;
+padding: 10px ;
+left: 35%;
+font-weight: bolder;
+position: absolute;
+
+}
+
+.start-count2{
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 10px ;
+  left: 38%;
+  font-weight: bolder;
+  position: absolute;
+}
+
+.clearfix{
+color: #28578c;
+font-size: 10px;
+padding: 15px;
+font-weight: bold;
+
+}
+.irs-mailbox{
+color: #ffffff;
+padding: auto;
+font-style: normal;
+font-size: 14px;
+font-weight: 400;
+text-align: left;
+}
+.irs-footer-contact{
+  text-align: left;
+}
+
+.irs-footer-heading{
+color: #f08080;
+font-size: medium ;
+font-weight: bolder;
+
+}
+
+.row{
+color:  #6b9aeb;
+font-size: medium ;
+font-weight: bold;
+text-align: center;
+
+}
+
+
+
+.footer{
+background-color:  #f08080;
+text-align:center;
+}
+
+.irs-footer-field{
+    background-color: #000000;
+    width: 100%;
+    height: 220px;
+}
+
+.titleheader
+{   
+ 
+    font-size: 20px;
+    height: auto;
+}
+.headertitlewhat{
+  position: relative;
+  
+  bottom:60px;
+  
+}
+.text-center{
+
+    position: relative;
+    right:0%;
+    color: #908686; 
+
+}
+
+.irs-title-icon{
+    height: 65px;
+    width: 55px;
+    position: relative;
+    right:0%;
+    padding:0%;
+}
+
+.donationimg{
+    height: 500px;
+    width:500px;
+    position: relative;
+    right:1.1%;
+}
+
+.donationtext{
+   
+    position: absolute;
+    left: 500px;
+    bottom:55px;
+    font-size: 25px;
+    height: auto;
+    width: 950px;
+    padding: 5%;
+}
+
+ul {
+  list-style-type: none;
+    
+}
+a { 
+  text-decoration: none ! important;
+}
+
+.irs-footer-link{
+  text-align: left;
+}
+
+footer .irs-footer-link ul li a {
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height:3.5 ;
+  text-transform: capitalize;
+  font-family: 'Fira Sans', sans-serif;
+  
+  
+}
+
+footer .irs-footer-link ul li a:hover {
+  color:#434343 ;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 1px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+ 
+  border-radius: 70px;
+}
+
+.fa-facebook {
+  background-color: #c1c4b7; 
+  right: auto;
+  color: red;
+  
+  
+ 
+
+}
+
+.fa-twitter {
+  background-color: #c1c4b7; 
+  right: auto;
+  color: red;
+}
+
+/*aoutus*/
+
+.irs-page-title-field {
+  padding: 80px 0;
+  background: url(/web/20180825174636im_/http://bloodgroups4u.com/assets/images/bg/3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.irs-layer-black {
+  position: relative;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+user agent stylesheet
+section {
+  display: block;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #333333;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  max-width: 100%;
+}
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  background-color: #fff;
+}
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+.irs-page-title-field.irs-layer-black:before {
+  background: rgba(0, 0, 0, 0.7);
+}
+.irs-layer-black:before {
+  content: " ";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+  background: rgba(0, 0, 0, 0.9);
+}
+.irs-donation-filed{
+  right: inherit;
+}
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:after, :before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+
+/*aboutus*/
+
+
+
+
+
+
+
+
+
+/*desktop*/
+@media screen and (min-width:600px)
+ {
+
+  header .banner {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background: #f38484;
+    padding: 10px;
+}
+
+header .banner button {
+  background: linear-gradient(to bottom, #f09191, #ffb1b1);
+  border-radius: 30px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: auto;
+  border-radius: 30px;
+  width: 100%;
+}
+
+.irs-title-icon{
+  height: 65px;
+  width: 55px;
+  position: auto;
+  right:0%;
+  padding:0%;
+}
+.btnd{
+  color:white;
+}
+
+
+
+ }
+
+
+
+/* Media query for devices with a screen width up to 320px */
+@media only screen and (max-width: 320px) {
+ 
+  
+    .irs-mailbox{
+    color: #ffffff;
+    padding: auto;
+    font-style: normal;
+    font-size: 5px;
+    font-weight: 4;
+    text-align: left;
+    }
+    .irs-footer-contact{
+      text-align: left;
+    }
+    
+    .irs-footer-heading {
+      color: #f08080;
+      
+      font-size: xx-small;
+      font-weight: 4;
+      font-weight: bolder;
+      display: table-footer-group;
+      line-height: 0.1;
+  }
+
+
+  footer .irs-footer-link ul li a {
+    color: #ffffff;
+    font-size: xx-small;
+    font-weight: 100;
+    line-height: 3.5;
+    text-transform: inherit;
+    display: inline-table;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 0.3;
+}
+  
+    
+    footer .irs-footer-link ul li a:hover {
+      color:#434343 ;
+    }
+
+   .pos{
+     
+
+   } 
+
+   .btn1
+   {
+    height:25px;
+    width: 70px;
+    border-radius:15px;
+    font-size: 10px;
+    position: relative;
+    left:200px;
+    
+   }
+ .slidetext1
+{
+  font-size: 10px;
+
+  
+}
+
+ .slidetext2{
+  font-size: 10px;
+  
+}
+  /* CSS rules for devices up to 320px */
+  /* Place your code here */
+}
+
+
+
+/* Media query for devices with a screen width up to 1024px */
+@media only screen and (max-width: 1024px) {
+  /* CSS rules for devices up to 1024px */
+ header .main {
+    display: table-row-group;
+  
+}
+}
+
+/* Media query for devices with a screen width up to 768px */
+@media only screen and (max-width: 768px) {
+  /* CSS rules for devices up to 768px */
+ header .main {
+    display: table-row-group;
+  
+}
+.btn1 {
+  
+  position: fixed;
+  top: 10; 
+  bottom: 0;
+}
+.slidetext1 {
+  color: black;
+  position: fixed;
+  top: 50px;
+}
+.slidetext2 {
+  color: black;
+  position: fixed;
+  top: 80px;
+}
+.irs-footer-field {
+
+  height: 400px;
+}
+}
+
+
+/* Media query for devices with a screen width up to 425px */
+@media only screen and (max-width: 650px) {
+  /* CSS rules for devices up to 425px */
+  /* Place your code here */
+  header .banner .left {
+    display: inline;
+    
+}
+header .main .navigation {
+    display: inline-grid;
+}
+header .main .navigation > a {
+    padding: 3px 20px;
+  
+}
+
+.irs-footer-field {
+
+  height: 670px;
+}
+
+}
